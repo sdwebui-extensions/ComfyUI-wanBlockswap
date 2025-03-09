@@ -1,49 +1,7 @@
 {
   "last_node_id": 106,
-  "last_link_id": 270,
+  "last_link_id": 273,
   "nodes": [
-    {
-      "id": 94,
-      "type": "wanBlockSwap",
-      "pos": [
-        930.6513061523438,
-        -20.17748260498047
-      ],
-      "size": [
-        315,
-        106
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 249
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            270
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "wanBlockSwap"
-      },
-      "widgets_values": [
-        20,
-        false,
-        false
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
     {
       "id": 96,
       "type": "WanVideoKsampler",
@@ -56,13 +14,13 @@
         262
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 269
+          "link": 273
         },
         {
           "name": "positive",
@@ -106,125 +64,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 106,
-      "type": "ModelSamplingSD3",
-      "pos": [
-        1336.44384765625,
-        -15.643301010131836
-      ],
-      "size": [
-        287.28814697265625,
-        60.12956619262695
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 270
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            269
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Shift (3-12)",
-      "properties": {
-        "Node name for S&R": "ModelSamplingSD3",
-        "cnr_id": "comfy-core",
-        "ver": "0.3.16"
-      },
-      "widgets_values": [
-        7
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 67,
-      "type": "ModelSamplingSD3",
-      "pos": [
-        634.2196655273438,
-        -22.898563385009766
-      ],
-      "size": [
-        210,
-        58
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 252
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            249
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ModelSamplingSD3"
-      },
-      "widgets_values": [
-        7
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 12,
-      "type": "UNETLoader",
-      "pos": [
-        164.64300537109375,
-        -24.209657669067383
-      ],
-      "size": [
-        350,
-        82
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "shape": 3,
-          "links": [
-            252
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader"
-      },
-      "widgets_values": [
-        "wan\\wan2.1_i2v_480p_14B_fp8_scaled.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 10,
       "type": "VAELoader",
       "pos": [
@@ -236,7 +75,7 @@
         60
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -272,7 +111,7 @@
         558.9039306640625
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -316,7 +155,7 @@
         210
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -384,52 +223,6 @@
       ]
     },
     {
-      "id": 73,
-      "type": "VAEDecodeTiled",
-      "pos": [
-        2286.91015625,
-        148.71641540527344
-      ],
-      "size": [
-        210,
-        150
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 261
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 211
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            218
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecodeTiled"
-      },
-      "widgets_values": [
-        256,
-        64,
-        64,
-        8
-      ]
-    },
-    {
       "id": 80,
       "type": "VHS_VideoCombine",
       "pos": [
@@ -438,10 +231,10 @@
       ],
       "size": [
         376.1499938964844,
-        334
+        588.6795043945312
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -493,13 +286,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "videos_00063.mp4",
-            "subfolder": "Hunyuan",
+            "filename": "videos_00001.mp4",
+            "subfolder": "Wan",
             "type": "output",
             "format": "video/nvenc_h264-mp4",
-            "frame_rate": 24,
-            "workflow": "videos_00063.png",
-            "fullpath": "C:\\Users\\rpawl\\ComfyUI_windows_portable\\ComfyUI\\output\\Hunyuan\\videos_00007.mp4"
+            "frame_rate": 16,
+            "workflow": "videos_00001.png",
+            "fullpath": "D:\\Diffusion Projects\\ComfyUI_windows_portable\\ComfyUI\\output\\Wan\\videos_00001.mp4"
           },
           "muted": false
         }
@@ -517,7 +310,7 @@
         201.1713104248047
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -559,7 +352,7 @@
         159.0052032470703
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -601,7 +394,7 @@
         98
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -638,7 +431,7 @@
         58
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -677,7 +470,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -709,6 +502,170 @@
       "widgets_values": [
         "center"
       ]
+    },
+    {
+      "id": 73,
+      "type": "VAEDecodeTiled",
+      "pos": [
+        2292.9814453125,
+        150.23422241210938
+      ],
+      "size": [
+        210,
+        150
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 261
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 211
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            218
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecodeTiled"
+      },
+      "widgets_values": [
+        256,
+        64,
+        64,
+        8
+      ]
+    },
+    {
+      "id": 12,
+      "type": "UNETLoader",
+      "pos": [
+        164.64300537109375,
+        -24.209657669067383
+      ],
+      "size": [
+        350,
+        82
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "shape": 3,
+          "links": [
+            271
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "wan\\wan2.1_i2v_480p_14B_fp8_scaled.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 94,
+      "type": "wanBlockSwap",
+      "pos": [
+        720.0398559570312,
+        -24.69327735900879
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 271
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            272
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "wanBlockSwap"
+      },
+      "widgets_values": [
+        20,
+        false,
+        false
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 67,
+      "type": "ModelSamplingSD3",
+      "pos": [
+        1233.6903076171875,
+        -15.999412536621094
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 272
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            273
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingSD3"
+      },
+      "widgets_values": [
+        7
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
     }
   ],
   "links": [
@@ -727,22 +684,6 @@
       80,
       0,
       "IMAGE"
-    ],
-    [
-      249,
-      67,
-      0,
-      94,
-      0,
-      "MODEL"
-    ],
-    [
-      252,
-      12,
-      0,
-      67,
-      0,
-      "MODEL"
     ],
     [
       253,
@@ -849,18 +790,26 @@
       "CONDITIONING"
     ],
     [
-      269,
-      106,
+      271,
+      12,
       0,
-      96,
+      94,
       0,
       "MODEL"
     ],
     [
-      270,
+      272,
       94,
       0,
-      106,
+      67,
+      0,
+      "MODEL"
+    ],
+    [
+      273,
+      67,
+      0,
+      96,
       0,
       "MODEL"
     ]
@@ -869,17 +818,17 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.061076460950002,
+      "scale": 0.7972024500000015,
       "offset": [
-        188.3004051036238,
-        161.96294111305195
+        235.99874649121242,
+        334.7024067920739
       ]
     },
     "groupNodes": {},
     "node_versions": {
-      "ComfyUI-wanBlockswap": "unknown",
       "ComfyUI-WanVideoKsampler": "e92a703670b6d2ed0748f3c25ae551e7e05d0ea8",
-      "comfy-core": "0.3.26"
+      "comfy-core": "0.3.26",
+      "ComfyUI-wanBlockswap": "unknown"
     },
     "VHS_latentpreview": true,
     "VHS_latentpreviewrate": 0,
