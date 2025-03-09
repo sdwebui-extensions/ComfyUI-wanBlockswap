@@ -1,5 +1,6 @@
 import comfy.model_management
 import gc
+import torch
 from comfy.patcher_extension import CallbacksMP
 from comfy.model_patcher import ModelPatcher
 from comfy.model_base import WAN21
@@ -25,12 +26,13 @@ class WanVideoBlockSwap:
         
         def swap_blocks(model: ModelPatcher, device_to, lowvram_model_memory, force_patch_weights, full_load):
             base_model = model.model
+            main_device=torch.device('cuda')
             if isinstance(base_model, WAN21):
                 unet = base_model.diffusion_model
             for b, block in tqdm(enumerate(unet.blocks), total=len(unet.blocks), desc="Initializing block swap"):
                  
                 if b > blocks_to_swap:
-                    block.to(model.offload_device)
+                    block.to(main_device)
                 else:
                     block.to(model.offload_device)
                         
