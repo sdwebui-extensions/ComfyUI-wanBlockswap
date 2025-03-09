@@ -14,7 +14,7 @@ class WanVideoBlockSwap:
                 "model": ("MODEL",),
                 "blocks_to_swap": ("INT", {"default": 20, "min": 0, "max": 40, "step": 1, "tooltip": "Number of transformer blocks to swap, the 14B model has 40, while the 1.3B model has 30 blocks"}),
                 "offload_img_emb": ("BOOLEAN", {"default": False, "tooltip": "Offload img_emb to offload_device"}),
-                "offload_txt_emb": ("BOOLEAN", {"default": False, "tooltip": "Offload time_emb to offload_device"}),
+                "offload_txt_emb": ("BOOLEAN", {"default": False, "tooltip": "Offload txt_emb to offload_device"}),
             },
         }
     RETURN_TYPES = ("MODEL",)
