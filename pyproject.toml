@@ -9,6 +9,6 @@ Repository = "https://github.com/orssorbit/ComfyUI-wanBlockswap"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "orssorbit"
 DisplayName = "ComfyUI-wanBlockswap"
 Icon = ""
